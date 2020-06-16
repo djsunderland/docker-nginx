@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t nginx2:latest https://github.com/djsunderland/docker-nginx/tree/master/stable/alpine
+      - docker build -t nginx2:latest .
       - docker tag nginx2:latest $REPOSITORY_URI:latest     
       # Tag the built docker image using the appropriate Amazon ECR endpoint and relevant
       # repository for our service container. This ensures that when the docker push
