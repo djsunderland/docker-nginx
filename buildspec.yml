@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t nginx2:latest -f /stable/apline
+      - docker build -t nginx2:latest /stable/apline
       - docker tag nginx2:latest $REPOSITORY_URI:latest     
       # Tag the built docker image using the appropriate Amazon ECR endpoint and relevant
       # repository for our service container. This ensures that when the docker push
