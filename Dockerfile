@@ -115,5 +115,6 @@ ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
 EXPOSE 80
 
 STOPSIGNAL SIGTERM
+# test
 
 CMD ["nginx", "-g", "daemon off;"]
